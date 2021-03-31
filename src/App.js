@@ -1,22 +1,22 @@
-import logo from './logo.svg';
+import anylogger from 'anylogger';
 import './App.css';
 
+const log = anylogger('my-app')
+
+const createLogStatements = () => {
+  log.debug('Logging is easy! (via createLogStatements)')
+  log.info('Logging is easy!  (via createLogStatements)')
+  log.error('Logging is easy! (via createLogStatements)')
+}
+
 function App() {
+  log.debug('Logging is easy! (via App)')
+  log.info('Logging is easy! (via App)')
+  log.error('Logging is easy! (via App)')
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <button onClick={() => createLogStatements()}>Create log statements</button>
       </header>
     </div>
   );
