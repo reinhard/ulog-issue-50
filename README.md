@@ -1,7 +1,6 @@
 ## About
 
-A Simple ulog demo that shows that the log configuration does not work as expected
-see see https://github.com/Download/ulog/issues/50#issuecomment-810596191
+A Simple [ulog](https://ulog.js.org/) demo that shows that the log configuration does not work as expected in some cases. See https://github.com/Download/ulog/issues/50#issuecomment-810596191
 
 ## Details
 
